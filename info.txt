@@ -1,0 +1,54 @@
+EMPAQUETADOR : webpack - gulp - browserify
+
+TRANSPILADOR : babel
+
+
+
+
+COMPONENTES : Son funciones que arrancan en mayuscula y su principal funcion es mostrar algo en pantalla usando su retorno
+
+
+
+const App = () => {
+    return "Hola Mundo"
+}
+
+const App = () => "Hola Mundo"
+
+
+function App () {
+    return "Hola Mundo"
+}
+
+
+App({param1:"hola",param2:"chau"})
+
+<App param1="hola" param2="chau" />
+
+<App></App>
+
+
+
+DESTRUCTURING :
+
+
+const arr = [1,2,3]
+
+const [uno,dos,tres] = arr
+
+const uno = arr[0]
+const dos = arr[1]
+const tres = arr[2]
+
+
+
+const obj = {x:1,y:2,z:3}
+
+const {x:uno,y:dos,z:tres} = obj
+const {x:x,y:y,z:z} = obj
+const {x,y,z} = obj
+
+
+const x = obj.x
+const y = obj.y
+const z = obj.z
