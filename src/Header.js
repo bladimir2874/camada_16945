@@ -1,32 +1,23 @@
-import Nav from "./Nav"
+import CustomNav from "./CustomNav"
+import Navbar from "react-bootstrap/Navbar"
+import Container from "react-bootstrap/Container"
 
-const Header = ({param1,param2,param3,param4,param5,param6,param7}) => {
+//Brand Toggle Collapse
+const { Brand, Collapse, Toggle } = Navbar
 
-    //const {param1,param2} = props
-    //const param1 = props.param1;
-    //const param2 = props.param2;
-
-    //console.log(props)
-
-    param5()
-
-    setTimeout(param6,4000)
-
-    console.log(param1)
-    console.log(param2)
-    console.log(param3)
-    //console.log(props.param1)
-    //console.log(props["param1"])
-    //console.log(props[variable])
-
+const Header = () => {
     return (
-        <header>
-            <h1>E-Commerce</h1>
-            {param7}
-            <img src={param4}/>
-            <i className="material-icons">shopping_cart</i>
-            <Nav/>
-        </header>
+        <Navbar as="header" expand="md" bg="dark" variant="dark">
+            <Container fluid={true}>
+                <Brand>
+                    <h1>E-Commerce</h1>
+                </Brand>
+                <Toggle />
+                <Collapse>
+                    <CustomNav />
+                </Collapse>
+            </Container>
+        </Navbar>
     );
 }
 

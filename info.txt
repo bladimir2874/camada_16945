@@ -5,7 +5,7 @@ TRANSPILADOR : babel
 
 
 
-COMPONENTES : Son funciones que arrancan en mayuscula y su principal funcion es mostrar algo en pantalla usando su retorno
+COMPONENTES : Son funciones que arrancan en mayuscula y su principal funcion es mostrar algo en pantalla usando su retorno. Pueden recibir parametros (props) pero siempre de componente padre a componente hijo. Siempre que un prop cambie de valor tenemos un re-render. Pueden tener estado(state) y si cambia de valor se re-renderizara. Tienen un ciclo de vida (mount-unmount) y un ciclo de vida de actualizacion (update).
 
 
 
@@ -52,3 +52,37 @@ const {x,y,z} = obj
 const x = obj.x
 const y = obj.y
 const z = obj.z
+
+
+
+
+class App extends Component {
+
+    constructor(){}
+
+    render(){}
+
+    componentDidMount(){}
+
+    componentDidUpdate(){}
+
+    componentWillUnmount(){}
+
+    shouldComponentUpdate(){}
+
+}
+
+
+
+HOOKS : Son funciones que nos permiten adaptar un componente a nuestras necesidades (closures)
+
+- useState : Nos permite crear un estado.
+- useEffect : Nos permite ejecutar una funcion cuando el componente se monta.
+- useContext 
+- useReducer 
+- useRef 
+- useMemo
+- useCallback
+- useImperativeHandle
+- useLayoutEffect
+- useDebugValue

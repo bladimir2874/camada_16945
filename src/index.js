@@ -1,16 +1,9 @@
-//1)Me traigo la libreria React
-import React from 'react';
-
-//2)Me traigo la libreria ReactDOM
-import ReactDOM from 'react-dom';
-
-//3)Importo un componente
-import App from './App';
-
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import "./estilos.css"
 
-
-//4)Renderizo el componente
 ReactDOM.render(
     <App />,
     document.getElementById("root")

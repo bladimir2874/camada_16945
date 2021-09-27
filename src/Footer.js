@@ -1,11 +1,10 @@
-import Nav from './Nav';
+import CustomNav from './CustomNav';
 
-const Footer = ({param7}) => {
+const Footer = () => {
     return (
         <footer>
             <p>&copy; Copyright 2021 - Horacio Gutierrez</p>
-            {param7}
-            <Nav />
+            <CustomNav />
         </footer>
     );
 }
